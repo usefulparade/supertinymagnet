@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400|Raleway:100,200,300,400');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    /* background-color: rgb(87, 77, 104); */
+}
+
+h1 {
+    color: white;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    line-height: 2em;
+}
+
+h2 {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+    margin: 0px;
+    padding: 2em;
+    padding-top: 0;
+}
+
+h3 {
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 200;
+    padding: 1em;
+}
+
+h4 {
+    color: white;
+    font-size: 1em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+}
+
+p {
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    color: white;
+    font-size: 1em;
+    border: 2px solid white;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #0e0d0e;
+    background-color: white;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe.player {
+    width: 100vw;
+    height: 100vh;
+}
+
+input[type=text] {
+    display: inline-block;
+    min-width: 20%;
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    font-size: 1em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type=submit] {
+    display: inline-block;
+    max-width: 200px;
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.heroimg {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    z-index: 0;
+    /* background-image: url("../assets/mountain.jpg"); */
+}
+
+.heroimg img {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    text-align: center;
+}
+
+.scrollBody{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.logo {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    max-width: 100vw;
+    max-height: 200px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.clients {
+}
+
+.clients img {
+    display: inline-block;
+    width: 70px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.first-section {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 30vh;
+    margin-bottom: -30vh;
+}
+
+.first-section i {
+    display: block;
+    position: absolute;
+    bottom: 30vh;
+    left:0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 3em;
+}
+.first-section h1 {
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.section {
+    display: block;
+}
+
+.subsection {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.color1 {
+    background-color: #0e0d0e;
+
+}
+
+.color2 {
+    background-color: rgb(61, 8, 20);
+}
+
+.nocolor {
+    background-color: transparent;
+}
+
+.quotes {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+}
+
+.quote {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    max-width: 80%;
+}
+
+.quote p {
+    margin: 40px;
+}
+
+#bgvid {
+    display: block;
+    position: absolute;
+    max-height: 100vh;
+    max-width: 100vw;
+    z-index: 0;
+    background-color: rgb(17, 17, 17);
+}

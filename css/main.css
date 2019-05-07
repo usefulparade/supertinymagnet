@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+}
+
+h1 {
+    text-shadow: 0 0 2px white;
+    color: transparent;
+    font-size: 4em;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+}
+
+h2 {
+    text-shadow: 0 0 2px white;
+    color: transparent;
+    font-size: 2.5em;
+    font-family: Georgia, serif;
+}
+
+h3 {
+    text-shadow: 0 0 2px white;
+    color: transparent;
+    font-size: 1em;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+}
+
+h4 {
+    text-shadow: 0 0 2px white;
+    color: transparent;
+    font-size: 1em;
+    font-family: Georgia, serif;
+    letter-spacing: 3px;
+}
+
+p {
+    text-shadow: 0 0 2px white;
+    color: transparent;
+    font-size: 2em;
+    font-family: Georgia, serif;
+}
+
+a {
+    text-shadow: 0 0 2px rgb(176, 176, 255);
+    color: transparent;
+    font-size: 1em;
+    font-family: Georgia, serif;
+}
+
+a:hover {
+    text-shadow: 0 0 2px rgb(254, 101, 101);
+}
+
+input[type=text] {
+    display: inline-block;
+    max-width: 80%;
+    background-color: transparent;
+    border: solid 5px white;
+    filter: blur(1px);
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type=submit] {
+    display: inline-block;
+    max-width: 200px;
+    background-color: transparent;
+    border: solid 5px white;
+    filter: blur(1px);
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.container {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height:400vh;
+    margin-top: 50px;
+    z-index: 1;
+    text-align: center;
+}
+
+.scrollBody{
+    display: block;
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+.logo {
+    display: block;
+    position: sticky;
+    top: 20px;
+    left: 0px;
+    max-width: 100vw;
+    max-height: 200px;
+    z-index: 1;
+    filter: blur(0.7px);
+}
+
+.logo img {
+    width: 200px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.clients {
+    filter: grayscale(0.4) blur(1px);
+}
+
+.clients img {
+    display: inline-block;
+    width: 200px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.section {
+    display: inline-block;
+    margin-bottom: 30vh;
+}
+
+.subsection {
+    display: inline-block;
+    margin-bottom: 5vh;
+}
+
+.quotes {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+}
+
+.quote {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    max-width: 80%;
+}
+
+.quote p {
+    margin: 10px;
+}
+
+#bgvid {
+    display: block;
+    position: fixed;
+    max-height: 100vh;
+    max-width: 100vw;
+    z-index: 0;
+    background-color: rgb(17, 17, 17);
+}
