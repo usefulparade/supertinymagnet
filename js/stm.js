@@ -3,7 +3,7 @@ var playhead;
 var vidLoaded;
 
 function preload(){
-    bgvid = createVideo("../assets/HomeMovie.mp4", loadVid);
+    bgvid = createVideo("../assets/homemovie3.mp4", loadVid);
     bgvid.size(windowWidth,windowHeight);
     bgvid.parent('bgvid');
 }
