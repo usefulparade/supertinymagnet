@@ -3,7 +3,7 @@ var playhead;
 var vidLoaded;
 
 function preload(){
-    bgvid = createVideo("../assets/SAMloop-luke-edit-2.mp4", loadVid);
+    bgvid = createVideo("./assets/SAMloop-luke-edit-2.mp4", loadVid);
     bgvid.parent('bgvid');
 }
 
