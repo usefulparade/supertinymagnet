@@ -3,8 +3,7 @@ var playhead;
 var vidLoaded;
 
 function preload(){
-    bgvid = createVideo("../assets/homemovie3.mp4", loadVid);
-    bgvid.size(windowWidth,windowHeight);
+    bgvid = createVideo("../assets/SAMloop-luke-edit-2.mp4", loadVid);
     bgvid.parent('bgvid');
 }
 
@@ -17,11 +16,12 @@ function draw(){
 }
 
 function windowResized(){
-    bgvid.size(windowWidth,windowHeight);
 }
 
 function loadVid(){
     bgvid.volume(0);
+    bgvid.attribute('width', '');
+    bgvid.attribute('height', '');
     //bgvid.pause();
     vidLoaded = true;
     bgvid.loop();
