@@ -37,6 +37,10 @@ h3 {
     font-weight: 400;
 }
 
+h3#signature {
+    line-height: 2em;
+}
+
 h4 {
     color: white;
     font-size: 2em;
