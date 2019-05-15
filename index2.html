@@ -7,9 +7,9 @@
         <title>STM</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        <script src="js/p5.min.js"></script>
+        <!-- <script src="js/p5.min.js"></script>
         <script src="js/p5.dom.js"></script>
-        <script src="js/p5.sound.min.js"></script>
+        <script src="js/p5.sound.min.js"></script> -->
         <!-- <script src="js/stm.js"></script> -->
         <script src="js/stm2.js"></script>
         <link rel="stylesheet" href="css/main2.css">
@@ -21,58 +21,79 @@
     <!-- <div id="bgvid"></div> -->
     
     <div id="bgvid">
-        <video autoplay muted loop>
-            <source src="/assets/SAMloop-luke-edit-2.mp4"></src> 
-        </video>
+            <video id="bgVid" autoplay muted loop>
+            
+                <source src="/assets/SAMloop-luke-edit-2.mp4"></src> 
+            
+            </video>
     </div>
     <div class="container" id="container">
             <div class="logo" onclick="scrollOnClick(0,0)">
                 <img src="assets/LogoWhite.png">
             </div>
-        <div class="scrollBody" id="scrollBody">
             <div class="section gallon">
+                <!-- <h2>SUPER TINY MAGNET</h2> -->
                 <div class="vertical-center">
-                    <h1>Branded video content with emotional authenticity, killer storytelling, and real heart.</h1>
+                    <p>We make branded video content with emotional authenticity, killer storytelling, and real heart.</p>
                     <form action="mailto:singingland@gmail.com" method="POST">
-                        <input type="text" name="subject" placeholder="how can we help?">
+                        <input type="text" name="subject" placeholder="get in touch!">
                         <input type="submit" value="SEND"></a>
                     </form>
+                    
                 </div>
-                    <div class="pull-bottom">
-                        <i class="material-icons">
-                            keyboard_arrow_down
-                        </i>
-                    </div>
+                <div class="pull-bottom">
+                    <i class="material-icons big">
+                        keyboard_arrow_down
+                    </i>
+                </div>
+                    
             </div>
             <div class="section gallon solid">
-                <h2>REEL</h2>
-                <iframe src="https://player.vimeo.com/video/236480066?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <h2>WATCH</h2>
+                    <iframe src="https://player.vimeo.com/video/236480066?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
             <div class="section gallon">
-                <h2>LINKS</h2>
+                <h2>WHO ARE WE?</h2>
+                <div class="vertical-center">
+                    <p>We were born in the darkroom. Raised on point-and-shoots. Ready to rock.</p>
+                </div>
+            </div>
+            <div class="section half-gallon solid">
+                <h2>WHERE ARE WE?</h2>
                 <div class="vertical-center">
                     <span><h3><a href="">VIMEO</a></h3></span>
                     <span><h3><a href="">INSTAGRAM</a></h3></span>
                     <span><h3><a href="">SIDE PROJECTS</a></h3></span>
                     <span><h3><a href="">FACEBOOK</a></h3></span>
                 </div>
-                
+            </div>
+            <div class="section half-gallon">
+                <h2>RATES?</h2>
+                    <p>We charge reasonable, sliding-scale rates. We want to work with you! Get in touch and we'll figure it out.</p>
+                    <p>
+                        <i class="material-icons">phone</i> 55five-5five5-5five5five
+                    </p>
+                    <p>
+                        <i class="material-icons">email</i> hi [at] supertinymagnet [dot] com
+                    </p>
+                    
             </div>
             <div class="section half-gallon solid">
-                    <h2>CLIENTS</h2>
-                    <div class="">
-                        <img class="client" src="assets/NASA.png"><img class="client" src="assets/LEGO.png"><img class="client" src="assets/PP.png"><img class="client" src="assets/ghostbusters.png"><img class="client" src="assets/pkmn.png">
+                    <h2>WHO HIRES US?</h2>
+                    <div class="vertical-center">
+                        <span><h3><a href="">GHOSTBUSTERS</a></h3></span>
+                        <span><h3><a href="">POKEMON</a></h3></span>
+                        <span><h3><a href="">PLANNED PARENTHOOD</a></h3></span>
+                        <span><h3><a href="">LEGO</a></h3></span>
                     </div>
                 </div>
                 <div class="section half-gallon">
-                    <h2>PRAISE</h2>
-                    <div class="quotes">
-                        <div class="quote"><h1>"wow omg STM is the best."<br> - a cool company</h1></div>
-                        <div class="quote"><h1>"they made my movie real good."<br> - Pikachu</h1></div>
-                        <div class="quote"><h1>"I felt both awestruck and giddy about STM's work."<br> - Stay Puft</h1></div>
-                    </div>
+                    <h2>WHAT DO THEY SAY?</h2>
+                        <span"><p>"wow omg STM is the best."<br> - a cool company</p></span>
+                        <span><p>"they made my movie real good."<br> - Pikachu</p></span>
+                        <span><p>"I felt awestruck and giddy about STM's work."<br> - Stay Puft</p></span>
                 </div>
-            </div>
+
             <div class="section solid blur">
                 <h3 class="">website by <span><a target="_blank" href="http://www.usefulparade.com">Useful Parade</a></span></h3>
             </div>
