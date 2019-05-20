@@ -50,11 +50,31 @@ h3#signature {
     line-height: 2em;
 }
 
+#clients h3{
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#clients h3:hover {
+    color: #0e0d0e;
+    background-color: white;
+}
+
 h4 {
     color: white;
     font-size: 0.5em;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    letter-spacing: 3px;
+}
+
+h5 {
+    color: white;
+    font-size: 1em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
     letter-spacing: 3px;
 }
 
@@ -90,6 +110,13 @@ a {
 a:hover {
     color: #0e0d0e;
     background-color: white;
+}
+
+#clients a {
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+
 }
 
 input[type=text] {
@@ -201,11 +228,22 @@ input[type=submit]:hover {
 }
 
 .toggle {
+    width: 100px;
+    display: block;
     position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translate(20px, 20px);
+    font-size: 48px;
+    padding: 0px;
+    transition: all 0.3s;
 }
 
 .toggle h4 {
-    transform: translateX(-200px);
+    position: fixed;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    cursor: pointer;
 }
 
 img.client {
@@ -216,14 +254,15 @@ img.client {
     margin-left: -20px;
     /* height: 0px; */
     width: 100px;
-    background-color: transparent;
+    background-color: transparent
     overflow: hidden;
     transition: all 0.1s;
     opacity: 0;
     transform: translate(-200px, 0px);
     padding-left: 50px;
     margin-left: -90px;
-    margin-top: 100px;
+    margin-top: 21px;
+    transition: all 0.3s;
 }
 
 .subnav h4#big {
@@ -248,8 +287,8 @@ img.client {
     border: solid black;
     border-width: 20px 20px 20px 20px;
     padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
     overflow: hidden;
 }
 
@@ -279,15 +318,16 @@ img.client {
 
 .hero img {
     display: inline-block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    max-width: 100px;
+    position: relative;
+    margin-left: -20px;
+    /* top: 20px;
+    right: 20px; */
+    max-width: 200px;
     border: none;
 }
 
 .hero #heroText {
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .solid {
@@ -345,6 +385,10 @@ img.client {
     padding-bottom: 40px;
     max-width: 900px;
 }
+.twoColumn img {
+    width: 100%;
+    max-width: 400px;
+}
 
 .leftSide {
     text-align: left;
@@ -381,13 +425,18 @@ img.client {
     font-size: 3em;
 }
 
+#caption {
+    text-align: center;
+}
+
 iframe {
     width: 70vw;
-    margin-top: 40px;
+    height: 70vh;
 }
 
 iframe.player {
     width: 70vw;
+    height: 70vh;
 }
 
 #bgvid {
@@ -420,6 +469,13 @@ iframe.player {
     h2 {
         font-size: 2em;
     }
+    h5 {
+        color: white;
+        font-size: 0.5em;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
     
     p {
         font-size: 1em;
@@ -428,7 +484,23 @@ iframe.player {
         font-size: 1em;
     }
 
+    iframe {
+        width: 70vw;
+        height: 30vh;
+    }
     
+    iframe.player {
+        width: 70vw;
+        height: 30vh;
+    }
+    
+    .nav h4:hover{
+        background-color: white;
+    }
+
+    .nav h4:hover i {
+        color: black;
+    }
 
     .section {
         padding-left: 20px;
@@ -447,7 +519,8 @@ iframe.player {
         min-height: 100vh;
     }
     .hero img {
-        max-width: 70px;
+        max-width: 100px;
+        margin-left: -10px;
     }
 
     .half-gallon .vertical-center {
@@ -468,9 +541,6 @@ iframe.player {
     img.client {
         max-width: 30%;
     }
-}
-
-@media only screen and (max-width: 1080px){
 
     .twoColumn {
         margin-top: 0px;
@@ -487,9 +557,6 @@ iframe.player {
         margin-top: 18px;
     }
 
-    .nav {
-    }
-
     .toggle {
         width: 45px;
         display: block;
@@ -501,17 +568,6 @@ iframe.player {
         padding: 0px;
     }
 
-    .toggle img{
-        position: fixed;
-        width: 80px;
-        padding-top: 10px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        /* margin-left: -40px; */
-        cursor: pointer;
-        transform: translateX(-100px);
-    }
-
     .toggle h4 {
         position: fixed;
         padding-top: 3px;
@@ -521,9 +577,12 @@ iframe.player {
 
     .subnav {
         width: 45px;
+        height: 100vh;
         margin-top: 1px;
         margin-left: -60px;
         padding-left: 0px;
+        background-color: black;
+        
     }
 
     .subnav h4#big {
