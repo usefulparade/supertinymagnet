@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400|Raleway:100,200,300,400');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,800');
 
+
+
+@keyframes bounce {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-10px);}
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,6 +15,8 @@ html {
 body {
     margin: 0;
     font-size: 18px;
+    box-sizing: border-box;
+    width: 100vw;
     /* background-color: rgb(87, 77, 104); */
 }
 
@@ -43,13 +52,20 @@ h3#signature {
 
 h4 {
     color: white;
-    font-size: 2em;
+    font-size: 0.5em;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 3px;
 }
 
 p {
+    color: white;
+    font-size: 2em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+}
+
+ul {
     color: white;
     font-size: 2em;
     font-family: 'Work Sans', sans-serif;
@@ -74,16 +90,6 @@ a {
 a:hover {
     color: #0e0d0e;
     background-color: white;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    margin-top: 40px;
-}
-
-iframe.player {
-    width: 100%;
 }
 
 input[type=text] {
@@ -111,7 +117,7 @@ input[type=submit] {
     padding: 10px;
     margin: 5px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 input[type=submit]:hover {
@@ -120,9 +126,10 @@ input[type=submit]:hover {
 
 }
 
-video {
-    /* filter: grayscale(100%); */
-    transition: filter 1s;
+.section img {
+    vertical-align: middle;
+    max-width: 100%;
+    border: 5px solid white;
 }
 
 .container {
@@ -140,24 +147,85 @@ video {
     margin: auto;
 }
 
-.logo {
+.nav {
     display: block;
     position: fixed;
     left: 60px;
     top: 40px;
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.1s;
 }
 
-.logo img {
+.nav img {
     width: 100px;
     margin-left: -40px;
+    margin-bottom: 10px;
     cursor: pointer;
-    transition: all 1s;
+    transition: all 0.1s;
+    filter: opacity(100%);
+}
+
+.nav img:hover {
+    filter: opacity(50%);
+}
+
+.nav a {
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    color: inherit; 
+}
+
+.nav a:hover {
+    color: inherit;
+}
+
+.nav h4 {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    transition: all 0.1s;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.nav h4:hover {
+    color: white;
+    background-color: transparent;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
 }
 
 img.client {
     max-width: 10%;
+}
+
+.subnav {
+    margin-left: -20px;
+    /* height: 0px; */
+    width: 100px;
+    background-color: transparent;
+    overflow: hidden;
+    transition: all 0.1s;
+    opacity: 0;
+    transform: translate(-200px, 0px);
+    padding-left: 50px;
+    margin-left: -90px;
+}
+
+.subnav:hover {
+    /* background-color: white; */
+}
+
+.subnav-open {
+    /* height: auto; */
+    opacity: 1;
+    transform: translate(0px, 0px);
+    /* transform: scaleY(1); */
 }
 
 .section {
@@ -168,11 +236,14 @@ img.client {
     border: solid black;
     border-width: 20px 20px 20px 20px;
     padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     overflow: hidden;
 }
 
-.section img {
-    vertical-align: middle;
+.hero {
+    border: none;
+    border-width: 0px;
 }
 
 .blur {
@@ -183,13 +254,13 @@ img.client {
 .gallon {
     display: block;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .half-gallon {
     display: block;
     position: relative;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .solid {
@@ -198,19 +269,21 @@ img.client {
 }
 
 .gallon .vertical-center {
-    position: absolute;
-    top: 40%;
+    display: block;
+    position: relative;
     left: 0;
     right: 0;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .half-gallon .vertical-center {
-    position: absolute;
-    top: 50%;
+    display: block;
+    position: relative;
     left: 0;
     right: 0;
+    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -218,15 +291,56 @@ img.client {
 .pull-bottom {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
+.bouncing {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
 .brand-brag {
     margin-top: 100px;
+}
+
+.twoColumn {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    max-width: 900px;
+}
+
+.leftSide {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    max-width: 45%;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+.rightSide {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    max-width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: bottom;
+}
+
+.rightSide.imageAlign {
+    vertical-align: top; 
+    margin-top: 48px;
 }
 
 .material-icons {
@@ -241,8 +355,13 @@ img.client {
 }
 
 iframe {
-    max-width: 80%;
-    max-height: 80%;
+    width: 70vw;
+    height: 70vh;
+    margin-top: 40px;
+}
+
+iframe.player {
+    width: 70vw;
 }
 
 #bgvid {
@@ -279,28 +398,65 @@ iframe {
     p {
         font-size: 1em;
     }
+    ul {
+        font-size: 1em;
+    }
 
-    .logo img {
+    .nav {
+        left: 40px;
+        top: 20px;
+    }
+
+    .subnav {
+        margin-left: -90px;
+        margin-top: -60px;
+    }
+
+    .nav img {
         width: 150px;
-        margin-left: -40px;
+        /* margin-left: -40px; */
         cursor: pointer;
         transform: scale(0.5) translateX(-60px) translateY(-60px);
     }
 
+    .section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     .half-gallon {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .half-gallon .vertical-center {
-        position: absolute;
-        top: 30%;
+        display: block;
+        position: relative;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20%;
     }
 
     img.client {
         max-width: 30%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .twoColumn {
+        margin-top: 40px;
+        padding-right: 10px;
+    }
+    .leftSide{
+        max-width: 100%;
+    }
+    .rightSide {
+        max-width: 100%;
+    }
+    .rightSide.imageAlign {
+        vertical-align: top; 
+        margin-top: 18px;
     }
 }

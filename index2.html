@@ -26,71 +26,106 @@
             </video>
     </div>
     <div class="container" id="container">
-            <div class="logo" onclick="scrollOnClick(0,0)">
-                <img src="assets/LogoWhite.png">
+            <div class="nav">
+                <img src="assets/LogoWhite.png" onclick="toggleNav()">
+                <div id="subnav" class="subnav">
+                    <a href="#top"><h4>TOP</h4></a>
+                    <a href="#reel"><h4>REEL</h4></a>
+                    <a href="#who"><h4>WHO?</h4></a>
+                    <a href="#advocacy"><h4>ADVOCACY</h4></a>
+                    <a href="#listen"><h4>LISTEN</h4></a>
+                    <a href="#clients"><h4>CLIENTS</h4></a>
+                    <a href="#contact"><h4>CONTACT</h4></a>
+                </div>
             </div>
-            <div class="section gallon">
-                <!-- <h2>SUPER TINY MAGNET</h2> -->
+            <div id="top" class="section gallon hero">
                 <div class="vertical-center">
-                    <p>We make branded video content with emotional authenticity, killer storytelling, and real heart.</p>
+                    <p>Branded storytelling with real heart</p>
                     <form action="mailto:singingland@gmail.com" method="POST">
                         <input type="text" name="subject" placeholder="get in touch!">
                         <input type="submit" value="SEND"></a>
                     </form>
                     
                 </div>
-                <div class="pull-bottom">
+                <div class="pull-bottom bouncing">
+                    <!-- <h3>V</h3> -->
                     <i class="material-icons big">
                         keyboard_arrow_down
                     </i>
                 </div>
                     
             </div>
-            <div class="section gallon solid">
-                <h2>WATCH</h2>
-                    <iframe src="https://player.vimeo.com/video/236480066?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div id="reel" class="section gallon solid">
+                <h2>REEL</h2>
+                <p>Thirsty? We're serving up fresh audiovisual treats.</p>
+                <iframe src="https://player.vimeo.com/video/236480066?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <p>MORE:</p>
+                <span><h3><a href="">VIMEO</a></h3></span>
+                <span><h3><a href="">INSTAGRAM</a></h3></span>
             </div>
-            <div class="section gallon">
+            <div id="who" class="section gallon">
                 <h2>WHO ARE WE?</h2>
-                <div class="vertical-center">
-                    <p>We were born in the darkroom. Raised on point-and-shoots. Ready to rock.</p>
-                </div>
-            </div>
-            <div class="section half-gallon solid">
-                <h2>WHERE ARE WE?</h2>
-                <div class="vertical-center">
-                    <span><h3><a href="">VIMEO</a></h3></span>
-                    <span><h3><a href="">INSTAGRAM</a></h3></span>
-                    <span><h3><a href="">SIDE PROJECTS</a></h3></span>
-                    <span><h3><a href="">FACEBOOK</a></h3></span>
-                </div>
-            </div>
-            <div class="section half-gallon">
-                <h2>RATES?</h2>
-                    <p>We charge reasonable, sliding-scale rates. We want to work with you! Get in touch and we'll figure it out.</p>
-                    <p>
-                        <i class="material-icons">phone</i> 55five-5five5-5five5five
-                    </p>
-                    <p>
-                        <i class="material-icons">email</i> hi [at] supertinymagnet [dot] com
-                    </p>
-                    
-            </div>
-            <div class="section half-gallon solid">
-                    <h2>WHO HIRES US?</h2>
-                    <div class="vertical-center">
-                        <span><h3><a href="">GHOSTBUSTERS</a></h3></span>
-                        <span><h3><a href="">POKEMON</a></h3></span>
-                        <span><h3><a href="">OMG</a></h3></span>
-                        <span><h3><a href="">LEGO</a></h3></span>
+                <div class="twoColumn">
+                    <div class="leftSide">
+                        <p>Hey, I’m Sam! I help companies distill their messages into snappy, meaningful videos. I want to leave this world a little more kind and empathetic than when I found it.
+                        <p><em>Show > Tell</em></p>
+                        <p>Let’s build something special together</p>
+                    </div>
+                    <div class="rightSide imageAlign">
+                        <img src="assets/portrait.jpg">
+                        <h3>Sam Katz, Founder + Director</h3>
                     </div>
                 </div>
-                <div class="section half-gallon">
-                    <h2>WHAT DO THEY SAY?</h2>
-                        <span"><p>"wow omg STM is the best."<br> - a cool company</p></span>
-                        <span><p>"they made my movie real good."<br> - Pikachu</p></span>
-                        <span><p>"I felt awestruck and giddy about STM's work."<br> - Stay Puft</p></span>
-                </div>
+            </div>
+            <div id="advocacy" class="section half-gallon solid">
+                <h2>ADVOCACY</h2>
+                    <div class="twoColumn">
+                        <p>Healing from sexual abuse is possible.</p> 
+
+                        <p>Survivors’ stories need to be told.</p> 
+                                
+                        <p>I have worked with organizations such as MenHealing and The Younique Foundation to provide hope and healing resources to other survivors. I shoot & edit videos, am featured in videos, lead online support groups, and speak on panels about this subject.</p>
+                        
+                    </div>
+                    <iframe src="https://player.vimeo.com/video/236480066?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+            </div>
+            <div id="listen" class="section half-gallon">
+                <h2>LISTEN</h2>
+                    <p>I do production audio, too! Rates start at $500/day + $200/day standard kit rental. </p>
+                    <p>Standard kit includes:</p>
+                    <div class="twoColumn">
+                        <div class="leftSide">
+                                <ul>
+                                    <li>Sound Devices MixPre-6</li>
+                                    <li>Sennheiser 416</li>
+                                    <li>Lectrosonics wireless kit with Sanken COS-11D (x2)</li>
+                                </ul>
+                        </div>
+                        <div class="rightSide imageAlign">
+                            <img src="assets/sam-sound.jpg">
+                        </div>
+                    </div>
+                    
+            </div>
+            <div id="clients" class="section half-gallon solid">
+                <h2>WHO HIRES US?</h2>
+                <p>“Sam immersed himself in our cause and developed a sensitive artistic interpretation of the message we hoped to convey. The video… has given great comfort to the families we serve.” - Kerry Peterson, Director, University of Utah Body Donor Program</p>
+
+                <span><h3><a href="">UNIVERSITY OF UTAH</a></h3></span>
+                <span><h3><a href="">THE YOUNIQUE FOUNDATION</a></h3></span>
+                <span><h3><a href="">QUALTRICS</a></h3></span>
+                <span><h3><a href="">FIVE FOR THE FIGHT</a></h3></span>
+                <span><h3><a href="">ART ACCESS</a></h3></span>
+                <span><h3><a href="">DISABILITY LAW CENTER</a></h3></span>
+                <span><h3><a href="">A.D.W.A.S.</a></h3></span>
+            </div>
+
+            <div id="contact" class="section half-gallon">
+                <h2>THE BOTTOM LINE</h2>
+                <p>If you made it this far, you’re probably a good fit. Just call us already.</p> 
+                <p><i class="material-icons">phone</i> 801-230-5246</p>
+            </div>
 
             <div class="section solid blur">
                 <h3 id="signature">website by <span><a target="_blank" href="http://www.usefulparade.com">Useful Parade</a></span></h3>

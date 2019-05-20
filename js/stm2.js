@@ -30,3 +30,7 @@
 function scrollOnClick(_x,_y){
     window.scrollTo(_x,_y);
 }
+
+function toggleNav(){
+    document.getElementById("subnav").classList.toggle("subnav-open");
+}
