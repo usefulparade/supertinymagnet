@@ -22,31 +22,56 @@
     
     <div id="bgvid">
             <video playsinline autoplay muted loop>
-                <source src="assets/SAMloop-luke-edit-2.mp4" type="video/mp4" />
+                <source src="assets/SAMloop2.mp4" type="video/mp4" />
             </video>
     </div>
     <div class="container" id="container">
             <div class="nav">
-                <img src="assets/LogoWhite.png" onclick="toggleNav()">
+                <div class="toggle" onclick="toggleNav()">
+                    <img src="assets/LogoWhite.png">
+                    <h4><i class="material-icons">add</i></h4>
+                </div>  
                 <div id="subnav" class="subnav">
-                    <a href="#top"><h4>TOP</h4></a>
-                    <a href="#reel"><h4>REEL</h4></a>
-                    <a href="#who"><h4>WHO?</h4></a>
-                    <a href="#advocacy"><h4>ADVOCACY</h4></a>
-                    <a href="#listen"><h4>LISTEN</h4></a>
-                    <a href="#clients"><h4>CLIENTS</h4></a>
-                    <a href="#contact"><h4>CONTACT</h4></a>
+                    <a href="#top">
+                        <h4 id='big'>TOP</h4>
+                        <h4 id='small'><i class="material-icons">home</i></h4>
+                    </a>
+                    <a href="#reel">
+                        <h4 id='big'>REEL</h4>
+                        <h4 id='small'><i class="material-icons">local_movies</i></h4>
+                    </a>
+                    <a href="#who">
+                        <h4 id='big'>WHO?</h4>
+                        <h4 id='small'><i class="material-icons">person_pin</i></h4>
+                    </a>
+                    <a href="#advocacy">
+                        <h4 id='big'>TOP</h4>
+                        <h4 id='small'><i class="material-icons">supervisor_account</i></h4>
+                    </a>
+                    <a href="#listen">
+                        <h4 id='big'>LISTEN</h4>
+                        <h4 id='small'><i class="material-icons">mic</i></h4>
+                    </a>
+                    <a href="#clients">
+                        <h4 id='big'>CLIENTS</h4>
+                        <h4 id='small'><i class="material-icons">work</i></h4>
+                    </a>
+                    <a href="#contact">
+                        <h4 id='big'>CONTACT</h4>
+                        <h4 id='small'><i class="material-icons">phone</i></h4>
+                    </a>
                 </div>
             </div>
             <div id="top" class="section gallon hero">
-                <div class="vertical-center">
-                    <p>Branded storytelling with real heart</p>
+                <img src="assets/LogoWhite.png">
+                <div id="heroText">
+                    <p>Branded storytelling <span>with real heart</span></p>
                     <form action="mailto:singingland@gmail.com" method="POST">
                         <input type="text" name="subject" placeholder="get in touch!">
                         <input type="submit" value="SEND"></a>
                     </form>
-                    
                 </div>
+                    
                 <div class="pull-bottom bouncing">
                     <!-- <h3>V</h3> -->
                     <i class="material-icons big">
@@ -112,7 +137,7 @@
                 <h2>WHO HIRES US?</h2>
                 <p>“Sam immersed himself in our cause and developed a sensitive artistic interpretation of the message we hoped to convey. The video… has given great comfort to the families we serve.” - Kerry Peterson, Director, University of Utah Body Donor Program</p>
 
-                <span><h3><a href="">UNIVERSITY OF UTAH</a></h3></span>
+                <span><h3><a href=""><h3>UNIVERSITY OF UTAH</h3></a></h3></span>
                 <span><h3><a href="">THE YOUNIQUE FOUNDATION</a></h3></span>
                 <span><h3><a href="">QUALTRICS</a></h3></span>
                 <span><h3><a href="">FIVE FOR THE FIGHT</a></h3></span>
