@@ -37,6 +37,9 @@ h2 {
     letter-spacing: 0.2em;
     margin: 0px;
 }
+h2#extraRoom {
+    margin-bottom: 20px;
+}
 
 h3 {
     color: white;
@@ -48,18 +51,6 @@ h3 {
 
 h3#signature {
     line-height: 2em;
-}
-
-#clients h3{
-    color: white;
-    border: 2px solid white;
-    padding: 10px;
-    text-decoration: none;
-    cursor: pointer;
-}
-#clients h3:hover {
-    color: #0e0d0e;
-    background-color: white;
 }
 
 h4 {
@@ -101,22 +92,37 @@ span {
 a {
     color: white;
     font-size: 1em;
-    border: 2px solid white;
-    padding: 10px;
-    text-decoration: none;
+    border: 0px solid white;
+    text-decoration: underline;
     cursor: pointer;
 }
 
 a:hover {
     color: #0e0d0e;
     background-color: white;
+    text-decoration: none;
 }
 
-#clients a {
-    border: none;
-    padding: 0px;
-    background-color: transparent;
+#buttonLink h3 {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
 
+#buttonLink a {
+    color: inherit;
+    border: 0px;
+    padding: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#buttonLink h3:hover, a:hover {
+    color: #0e0d0e;
+    background-color: white;
+    text-decoration: none;
 }
 
 input[type=text] {
@@ -327,7 +333,7 @@ img.client {
 }
 
 .hero #heroText {
-    margin-top: 15%;
+    margin-top: 8%;
 }
 
 .solid {
