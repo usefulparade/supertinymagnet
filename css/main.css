@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,800');
 
 
-
 @keyframes bounce {
     from {transform: translateY(0px);}
     to {transform: translateY(-10px);}
@@ -76,11 +75,18 @@ p {
     font-weight: 200;
 }
 
+p.quote {
+    padding-left: 5%;
+}
+
 ul {
     color: white;
     font-size: 2em;
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
+}
+.smaller {
+    font-size: 1.3em;
 }
 
 span {
@@ -260,7 +266,7 @@ img.client {
     margin-left: -20px;
     /* height: 0px; */
     width: 100px;
-    background-color: transparent
+    background-color: transparent;
     overflow: hidden;
     transition: all 0.1s;
     opacity: 0;
@@ -413,6 +419,25 @@ img.client {
     vertical-align: bottom;
 }
 
+.floatText {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.floatImg-R {
+    text-align: left;
+    display: block;
+    position: relative;
+    max-width: 45%;
+    margin: 10px;
+    vertical-align: bottom;
+    float: right;
+}
+
 .rightSide.imageAlign {
     vertical-align: top; 
     margin-top: 48px;
@@ -427,6 +452,18 @@ img.client {
 
 .material-icons.big {
     font-size: 3em;
+}
+
+.socials img{
+    border-width: 0px;
+    max-width: 40px;
+    margin: 10px;
+    filter: contrast(1.5);
+}
+
+.socials a:hover {
+    background-color: transparent;
+
 }
 
 #caption {
@@ -485,6 +522,9 @@ iframe.player {
         font-size: 1em;
     }
     ul {
+        font-size: 1em;
+    }
+    .smaller {
         font-size: 1em;
     }
 
@@ -554,6 +594,12 @@ iframe.player {
         max-width: 100%;
     }
     .rightSide {
+        max-width: 100%;
+    }
+    .floatText{
+        max-width: 100%;
+    }
+    .floatImg-R {
         max-width: 100%;
     }
     .rightSide.imageAlign {
