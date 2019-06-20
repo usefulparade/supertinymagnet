@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400|Raleway:100,200,300,400');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,800');
 
 
 @keyframes bounce {
     from {transform: translateY(0px);}
     to {transform: translateY(-10px);}
+}
+
+@keyframes plus-to-x {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(135deg);}
+}
+
+@keyframes x-to-plus {
+    from {transform: rotate(135deg);}
+    to {transform: rotate(0deg);}
 }
 
 html {
@@ -79,6 +88,10 @@ p.quote {
     padding-left: 5%;
 }
 
+b {
+    font-weight: 400;
+}
+
 ul {
     color: white;
     font-size: 2em;
@@ -91,8 +104,8 @@ ul {
 
 span {
     display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
 }
 
 a {
@@ -115,6 +128,8 @@ a:hover {
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #buttonLink a {
@@ -129,6 +144,7 @@ a:hover {
     color: #0e0d0e;
     background-color: white;
     text-decoration: none;
+    
 }
 
 input[type=text] {
@@ -256,6 +272,8 @@ input[type=submit]:hover {
     padding-top: 3px;
     padding-bottom: 5px;
     cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
 }
 
 img.client {
@@ -601,6 +619,7 @@ iframe.player {
     }
     .floatImg-R {
         max-width: 100%;
+        float: center;
     }
     .rightSide.imageAlign {
         vertical-align: top; 

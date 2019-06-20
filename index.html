@@ -18,40 +18,40 @@
     
     <div id="bgvid">
             <video playsinline autoplay muted loop>
-                <source src="assets/SAMloop2.mp4" type="video/mp4" />
+                <source src="assets/SAMloop3.mp4" type="video/mp4" />
             </video>
     </div>
     <div class="container" id="container">
             <div class="nav">
                 <div class="toggle" onclick="toggleNav()">
-                    <h4><i class="material-icons">add</i></h4>
+                    <h4 onclick="plusToX()"><i class="material-icons"><span id="toggle-plus">add</span></i></h4>
                 </div>  
                 <div id="subnav" class="subnav">
-                    <a target="_blank" href="#top">
+                    <a href="#top">
                         <h4 id='big'>TOP</h4>
                         <h4 id='small'><i class="material-icons">home</i></h4>
                     </a>
-                    <a target="_blank" href="#reel">
+                    <a href="#reel">
                         <h4 id='big'>REEL</h4>
                         <h4 id='small'><i class="material-icons">local_movies</i></h4>
                     </a>
-                    <a target="_blank" href="#who">
+                    <a href="#who">
                         <h4 id='big'>ABOUT</h4>
                         <h4 id='small'><i class="material-icons">person_pin</i></h4>
                     </a>
-                    <!-- <a target="_blank" href="#advocacy">
+                    <!-- <a href="#advocacy">
                         <h4 id='big'>ADVOCACY</h4>
                         <h4 id='small'><i class="material-icons">supervisor_account</i></h4>
                     </a>
-                    <a target="_blank" href="#listen">
+                    <a href="#listen">
                         <h4 id='big'>AUDIO</h4>
                         <h4 id='small'><i class="material-icons">mic</i></h4>
                     </a> -->
-                    <a target="_blank" href="#clients">
+                    <a href="#clients">
                         <h4 id='big'>CLIENTS</h4>
                         <h4 id='small'><i class="material-icons">work</i></h4>
                     </a>
-                    <a target="_blank" href="#contact">
+                    <a href="#contact">
                         <h4 id='big'>CONTACT</h4>
                         <h4 id='small'><i class="material-icons">phone</i></h4>
                     </a>
@@ -62,8 +62,8 @@
                 <div id="heroText">
                     <img src="assets/LogoWhite.png">
                     <p>Branded films <span>with heart</span></p>
-                    <form action="mailto:singingland@gmail.com" method="POST">
-                        <input type="text" name="subject" placeholder="get in touch!">
+                    <form action="mailto:sam@supertinymagnet.com" method="GET" enctype="text/plain" autocomplete="off">
+                        <input type="text" name="subject" placeholder="get in touch!" enctype="text/plain">
                         <input type="submit" value="SEND"></a>
                     </form>
                 </div>
@@ -90,20 +90,32 @@
                 <div class="twoColumn">
                     <div class="floatText">
                         <p>
-                        <div class="floatImg-R">
-                            <img src="assets/portrait.jpg">
-                            <h3 id="caption">Sam Katz, Founder + Director</h3>
-                        </div>
-                        <p><b>Our goal</b>: to make this world a little more empathetic.</p>
-                        <p><b>Our method</b>: carefully planned & expertly executed collaborative filmmaking.</p>
-                        <p class="smaller">We’re a small company making big waves (like a super tiny magnet!). We create and market videos that foster authentic emotional connection between our clients and their intended audience. To be honest, it’s mostly just me, Sam Katz (hi, guys!) but we handpick the perfect creative team to complement each project. We are dedicated to our craft and to the people we represent, both behind and in front of the lens.</p>
-                        <p class="smaller">We’re not interested in making flashy, supersaturated videos that will be out of date six months from now. We create intimate, powerful branded video content that impacts people long after viewing.</p>
-                    </p>
+                            <div class="floatImg-R">
+                                <img src="assets/sam-headshot.jpg">
+                                <h3 id="caption">Sam Katz, Founder + Director</h3>
+                            </div>
+                            <p><b><span>We create</span> intimate, powerful branded video content that resonates long after viewing.</b></p>
+                            <p class="smaller">We’re a small company making big waves. Honestly, it’s mostly just me, Sam Katz (hi, guys!) but we handpick the perfect creative team to complement each project.</p>
+                            <p class="smaller">We are dedicated to our craft and to the people we represent, both behind and in front of the lens. We’re not interested in making flashy, oversaturated videos that will be out of date six months from now.</p>
+                            <p class="smaller"><b>Our goal</b>: to make this world a little more empathetic.</p>
+                            <p class="smaller"><b>Our method</b>: carefully planned & expertly executed collaborative filmmaking.</p>
+                        </p>
                     </div>
+                    <!-- <div class="leftSide">
+                        <p><b>We create intimate, powerful branded video content that resonates long after viewing.</b></p>
+                        <p class="smaller">We’re a small company making big waves. Honestly, it’s mostly just me, Sam Katz (hi, guys!) but we handpick the perfect creative team to complement each project.</p>
+                        <p class="smaller">We are dedicated to our craft and to the people we represent, both behind and in front of the lens. We’re not interested in making flashy, oversaturated videos that will be out of date six months from now.</p>
+                        <p class="smaller"><b>Our goal</b>: to make this world a little more empathetic.</p>
+                        <p class="smaller"><b>Our method</b>: carefully planned & expertly executed collaborative filmmaking.</p>
+                    </div>
+                    <div class="rightSide">
+                        <img src="assets/sam-headshot.jpg">
+                        <h3 id="caption">Sam Katz, Founder + Director</h3>
+                    </div> -->
                     
                 </div>
             </div>
-            <div class="section half-gallon solid">
+            <div id="clients" class="section half-gallon solid">
                 <h2>WHO HIRES US?</h2>
                 <div class="twoColumn">
                     <div style="text-align: left;">
@@ -126,7 +138,7 @@
                         <span><h3><a target="_blank" href="">DISABILITY LAW CENTER</a></h3></span>
                         <span><h3><a target="_blank" href="">A.D.W.A.S.</a></h3></span> -->
                     
-                        <p class="smaller">The people who gravitate towards us think a little differently about their marketing strategy. They believe that thoughtfully-constructed, emotionally-driven videos can win hearts and minds and bring their existing audience closer. They are also often people whose work demands a high level of trust and sensitivity.</p>
+                        <!-- <p class="smaller">The people who gravitate towards us think a little differently about their marketing strategy. They believe that thoughtfully-constructed, emotionally-driven videos can win hearts and minds and bring their existing audience closer. They are also often people whose work demands a high level of trust and sensitivity.</p> -->
 
                     
                         <p class="smaller quote">“Sam immersed himself in our cause and developed a sensitive artistic interpretation of the message we hoped to convey. The video… has given great comfort to the families we serve.”</p> 
@@ -138,9 +150,9 @@
             <div id="contact" class="section half-gallon">
                 <h2>THE BOTTOM LINE</h2>
                 <div class="twoColumn">
-                    <p>If you made it this far, we'd love to partner with you. Let's do this thing.</p> 
-                    <p><i class="material-icons">phone</i> <a target="_blank" href="tel:1-801-230-5246">801-230-5246</a></p>
-                    <p><i class="material-icons">mail</i> <a target="_blank" href="mailto:hi@supertinymagnet.com">hi [at] supertinymagnet [dot] com</a></p>
+                    <p>If you've made it this far, we'd love to partner with you. Let's do this thing.</p> 
+                    <p><i class="material-icons">phone</i> <a target="_blank" href="tel:1-773-234-2829">(773) 234-2829</a></p>
+                    <p><i class="material-icons">mail</i> <a target="_blank" href="mailto:sam@supertinymagnet.com">sam [at] supertinymagnet.com</a></p>
                 </div>
             </div>
 
