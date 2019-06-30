@@ -13,15 +13,14 @@
 </head>
 
 <body>
-    <!-- <div class="logo"><img src="assets/LogoWhite.png"></div> -->
-    <!-- <div id="bgvid"></div> -->
     
     <div id="bgvid">
             <video playsinline autoplay muted loop>
-                <source src="assets/SAMloop3.mp4" type="video/mp4" />
+                <source src="assets/SAMloop3.mp4" type="video/mp4"/>
             </video>
     </div>
     <div class="container" id="container">
+            <!-- THIS IS THE NAVIGATION BAR -->
             <div class="nav">
                 <div class="toggle" onclick="toggleNav()">
                     <h4 onclick="plusToX()"><i class="material-icons"><span id="toggle-plus">add</span></i></h4>
@@ -39,14 +38,6 @@
                         <h4 id='big'>ABOUT</h4>
                         <h4 id='small'><i class="material-icons">person_pin</i></h4>
                     </a>
-                    <!-- <a href="#advocacy">
-                        <h4 id='big'>ADVOCACY</h4>
-                        <h4 id='small'><i class="material-icons">supervisor_account</i></h4>
-                    </a>
-                    <a href="#listen">
-                        <h4 id='big'>AUDIO</h4>
-                        <h4 id='small'><i class="material-icons">mic</i></h4>
-                    </a> -->
                     <a href="#clients">
                         <h4 id='big'>CLIENTS</h4>
                         <h4 id='small'><i class="material-icons">work</i></h4>
@@ -57,6 +48,8 @@
                     </a>
                 </div>
             </div>
+
+            <!-- LANDING SECTION -->
             <div id="top" class="section gallon hero">
                 
                 <div id="heroText">
@@ -69,22 +62,22 @@
                 </div>
                     
                 <div class="pull-bottom bouncing">
-                    <!-- <h3>V</h3> -->
-                    <i class="material-icons big">
-                        keyboard_arrow_down
-                    </i>
+                    <h2>⋁</h2>
                 </div>
                     
             </div>
+
+            <!-- REEL -->
             <div id="reel" class="section gallon solid">
                 <h2 id="extraRoom">REEL</h2>
                 <iframe src="https://player.vimeo.com/video/236480066?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 <h3>WATCH MORE:</h3>
                 <div id="buttonLink">
-                    <span><h3><a target="_blank" href="">WORK SAMPLES</a></h3></span>
-                    <span><h3><a target="_blank" href="">SOUND</a></h3></span>
+                    <span><h3><a class="bigger" target="_blank" href="https://vimeo.com/supertinymagnet">WORK SAMPLES</a></h3></span>
                 </div>
             </div>
+
+            <!-- WHO IS STM -->
             <div id="who" class="section gallon">
                 <h2>WHO IS SUPER TINY MAGNET?</h2>
                 <div class="twoColumn">
@@ -101,20 +94,10 @@
                             <p class="smaller"><b>Our method</b>: carefully planned & expertly executed collaborative filmmaking.</p>
                         </p>
                     </div>
-                    <!-- <div class="leftSide">
-                        <p><b>We create intimate, powerful branded video content that resonates long after viewing.</b></p>
-                        <p class="smaller">We’re a small company making big waves. Honestly, it’s mostly just me, Sam Katz (hi, guys!) but we handpick the perfect creative team to complement each project.</p>
-                        <p class="smaller">We are dedicated to our craft and to the people we represent, both behind and in front of the lens. We’re not interested in making flashy, oversaturated videos that will be out of date six months from now.</p>
-                        <p class="smaller"><b>Our goal</b>: to make this world a little more empathetic.</p>
-                        <p class="smaller"><b>Our method</b>: carefully planned & expertly executed collaborative filmmaking.</p>
-                    </div>
-                    <div class="rightSide">
-                        <img src="assets/sam-headshot.jpg">
-                        <h3 id="caption">Sam Katz, Founder + Director</h3>
-                    </div> -->
-                    
                 </div>
             </div>
+
+            <!-- CLIENTS -->
             <div id="clients" class="section half-gallon solid">
                 <h2>WHO HIRES US?</h2>
                 <div class="twoColumn">
@@ -130,16 +113,6 @@
                             <li><a target="_blank" href="https://learn.genetics.utah.edu/content/evolution/bias">Learn.Genetics</a> to make their educational content more accessible and engaging.</li>
                             <li><a target="_blank" href="">NetFreedom Pioneers</a> to launch a new service for people with limited access to information and education.</li>
                         </ul>
-                        <!-- <span><a target="_blank" href=""><h3>UNIVERSITY OF UTAH</h3></a></span>
-                        <span><h3><a target="_blank" href="">THE YOUNIQUE FOUNDATION</a></h3></span>
-                        <span><h3><a target="_blank" href="">QUALTRICS</a></h3></span>
-                        <span><h3><a target="_blank" href="">FIVE FOR THE FIGHT</a></h3></span>
-                        <span><h3><a target="_blank" href="">ART ACCESS</a></h3></span>
-                        <span><h3><a target="_blank" href="">DISABILITY LAW CENTER</a></h3></span>
-                        <span><h3><a target="_blank" href="">A.D.W.A.S.</a></h3></span> -->
-                    
-                        <!-- <p class="smaller">The people who gravitate towards us think a little differently about their marketing strategy. They believe that thoughtfully-constructed, emotionally-driven videos can win hearts and minds and bring their existing audience closer. They are also often people whose work demands a high level of trust and sensitivity.</p> -->
-
                     
                         <p class="smaller quote">“Sam immersed himself in our cause and developed a sensitive artistic interpretation of the message we hoped to convey. The video… has given great comfort to the families we serve.”</p> 
                         <p class="smaller quote">- Kerry Peterson, Director, University of Utah Body Donor Program</p>
@@ -147,6 +120,7 @@
                 </div>
             </div>
 
+            <!-- CONTACT -->
             <div id="contact" class="section half-gallon">
                 <h2>THE BOTTOM LINE</h2>
                 <div class="twoColumn">
@@ -156,6 +130,7 @@
                 </div>
             </div>
 
+            <!-- BOTTOM SOCIAL LINK STUFF -->
             <div class="section solid">
                 <div class="socials">
                     <a target="_blank" href="https://www.instagram.com/supertinymagnet/"><img src="assets/ico/ig.png"></a>
@@ -163,8 +138,7 @@
                     <a target="_blank" href="https://www.linkedin.com/in/sam-katz-4a3b2653"><img src="assets/ico/linkedin.png"></a>
                 </div>
                 <div class="buttonLink">
-                    <span><h3 id="signature">website by</h3></span> 
-                    <span id="buttonLink"><h3><a target="_blank" href="http://www.usefulparade.com">Useful Parade</a></span></h3>
+                    <span id="buttonLink"><h3>a <a target="_blank" href="http://www.usefulparade.com">Useful Parade</a></span> site</h3>
                 </div>
             </div>
            
