@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,800');
 
-
 @keyframes bounce {
     from {transform: translateY(0px);}
     to {transform: translateY(-10px);}
