@@ -151,6 +151,10 @@ a.bigger{
     
 }
 
+.usefulparade h3 {
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
 input[type=text] {
     display: inline-block;
     min-width: 20%;
@@ -513,6 +517,10 @@ iframe.player {
     z-index: -100;
     overflow: hidden;
     background-color: rgb(17, 17, 17);
+    background-image: url('/assets/frame-one.jpg');
+    background-size: cover;
+    /* background-origin: center; */
+    background-position: 50% 50%;
 }
 
 #bgvid video {
@@ -671,5 +679,10 @@ iframe.player {
     .subnav h4#small {
         display: block;
         font-size: 20px;
+    }
+
+    .usefulparade h3 {
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
     }
 }
